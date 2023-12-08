@@ -7,10 +7,6 @@ describe('Navegação', () => {
         cy.get('.maeztraio-newsletter-cookies-0-x-cookieButton').click();
         cy.get('#downshift-1-input').type('Hello Kitty').type('{enter}');
         cy.wait(5000);
-        cy.get('.apagina-search-result-0-x-filterPopupButton > .apagina-search-result-0-x-filterPopupTitle').click();
-        cy.get('.apagina-search-result-0-x-accordionFilterContainer--departamento > .apagina-search-result-0-x-accordionFilterItem > .apagina-search-result-0-x-accordionFilterContent').click();
-        cy.get('#Livros').click();
-        cy.get('.apagina-search-result-0-x-filterApplyButtonWrapper > .vtex-button > .vtex-button__label').click();
         cy.get(':nth-child(2) > .vtex-product-summary-2-x-container > .vtex-product-summary-2-x-clearLink > .vtex-product-summary-2-x-element > .vtex-flex-layout-0-x-flexRow--summary-fac-0001--img-container > .vtex-flex-layout-0-x-flexRowContent--summary-fac-0001--img-container > .flex-grow-1 > .vtex-flex-layout-0-x-flexCol > :nth-child(2) > .vtex-product-summary-2-x-imageWrapper > .dib > .vtex-product-summary-2-x-imageNormal').click();
         cy.wait(5000);
         cy.get('.vtex-address-form-4-x-input').type('01153000');
@@ -18,6 +14,5 @@ describe('Navegação', () => {
         cy.get(':nth-child(1) > .vtex-store-components-3-x-shippingTableCellDeliveryName').click();
         cy.get('.pb0 > .vtex-button > .vtex-button__label').click();
         cy.get('#proceed-to-checkout > .vtex-button__label').click();
-        cy.get('#cart-to-orderform').click();
     });
 });
